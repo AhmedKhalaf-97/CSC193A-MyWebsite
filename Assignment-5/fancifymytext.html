@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Fancify Shamcify</title>
+		<script src="fancifymytext.js"></script>
 	</head>
 	
 	<body>
@@ -16,17 +17,17 @@
 		<fieldset style="width: fit-content;">
 			<legend>Fancify</legend>
 			
-			<button id="biggerButton" onclick="createAlert()">Bigger!</button>
+			<button id="biggerButton">Bigger!</button>
 			<button id="mooButton" onclick="mooText()">Moo</button>
 			
 			<div>
 				<label>
-					<input type="radio" name="styleChoice" value="FancyShmancy" onchange="setTextStyle('fancy')">
+					<input type="radio" id="fancyRadioBtn" name="styleChoice" value="FancyShmancy">
 					FancyShmancy
 				</label>
 				
 				<label>
-					<input type="radio"  name="styleChoice" value="BoringBetty" onchange="setTextStyle('boring')" checked>
+					<input type="radio" id="boringRadioBtn" name="styleChoice" value="BoringBetty" checked>
 					BoringBetty
 				</label>
 			</div>
@@ -34,5 +35,4 @@
 		
 	</body>
 
-	<script src="fancifymytext.js"></script>
 </html>
